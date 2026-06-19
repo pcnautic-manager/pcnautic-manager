@@ -1,0 +1,25 @@
+{
+  "name": "pcnautic-manager-v1-commercial",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PCNautic Manager V1 Commercial SaaS - Yacht operations, safety, compliance, marketplace, CRM and payments.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "seed": "node scripts/seed.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.9.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.12.0",
+    "stripe": "^16.8.0"
+  }
+}
