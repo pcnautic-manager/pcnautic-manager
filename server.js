@@ -17,6 +17,17 @@ app.use(cors());
 app.use(express.json({ limit: "50mb" }));
 app.use(express.static(path.join(__dirname, "public")));
 
+
+const fs = require("fs");
+
+const dataDir = path.join(__dirname, "data");
+
+if (!fs.existsSync(dataDir)) {
+  fs.mkdirSync(dataDir, { recursive: true });
+}
+
+const db = new Database(path.join(dataDir, "pcnautic_v1.db"));
+
 const db = new Database(path.join(__dirname, "data", "pcnautic_v1.db"));
 db.pragma("journal_mode = WAL");
 
