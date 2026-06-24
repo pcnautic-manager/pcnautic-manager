@@ -28,7 +28,7 @@ if (!fs.existsSync(dataDir)) {
 
 const db = new Database(path.join(dataDir, "pcnautic_v1.db"));
 
-const db = new Database(path.join(__dirname, "data", "pcnautic_v1.db"));
+
 db.pragma("journal_mode = WAL");
 
 db.exec(`
