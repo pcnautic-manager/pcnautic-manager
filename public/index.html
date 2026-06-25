@@ -1,12 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PCNautic Manager</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PCNautic Manager</title>
+<style>
+body{margin:0;font-family:Arial;background:#f4f8fb;color:#102033}
+header{background:#02111f;color:white;padding:25px}
+.logo{font-size:32px;font-weight:bold}
+.hero{padding:60px;background:linear-gradient(135deg,#02111f,#0077b6);color:white}
+.hero h1{font-size:48px;margin:0}
+.card{background:white;margin:25px;padding:25px;border-radius:18px;box-shadow:0 10px 30px #0002}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:25px}
+button{background:#0077b6;color:white;border:0;padding:14px 20px;border-radius:12px;font-weight:bold}
+</style>
 </head>
 <body>
-  <h1>PCNautic Manager</h1>
-  <p>Servidor funcionando correctamente.</p>
+<header>
+  <div class="logo">⚓ PCNautic Manager</div>
+  <p>Powered by PC Nautic Services</p>
+</header>
+
+<section class="hero">
+  <h1>Yacht Management Platform</h1>
+  <p>Fleet, Charter, Marketplace, Safety, Inspections, Documents & Compliance.</p>
+  <button onclick="alert('Login demo listo')">Entrar a la App</button>
+</section>
+
+<section class="grid">
+  <div class="card"><h2>Fleet Management</h2><p>Gestión de embarcaciones, propietarios y capitanes.</p></div>
+  <div class="card"><h2>Charter</h2><p>Calendario, reservas, clientes y depósitos.</p></div>
+  <div class="card"><h2>Marketplace</h2><p>Publicaciones de venta: $99 / 90 días.</p></div>
+  <div class="card"><h2>Safety</h2><p>EPIRB, life rafts, extinguishers y compliance.</p></div>
+  <div class="card"><h2>Inspections</h2><p>Checklists diarios, semanales, mensuales y anuales.</p></div>
+  <div class="card"><h2>Documents</h2><p>Seguros, licencias, certificados y vencimientos.</p></div>
+</section>
 </body>
 </html>
