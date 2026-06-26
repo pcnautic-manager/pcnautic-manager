@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fleet Management - PCNautic</title>
+<style>
+body{margin:0;font-family:Arial;background:#f4f7fb;color:#102033}
+header{background:#02111f;color:white;padding:20px}
+main{padding:30px}
+.card{background:white;padding:25px;border-radius:15px;box-shadow:0 8px 20px #0002;margin-bottom:20px}
+input,select{width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:8px}
+button{background:#0077b6;color:white;border:0;padding:12px 20px;border-radius:10px;font-weight:bold}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px}
+a{color:white;text-decoration:none}
+</style>
+</head>
+<body>
+
+<header>
+<h1>⚓ Fleet Management</h1>
+<a href="dashboard.html">← Volver al Dashboard</a>
+</header>
+
+<main>
+
+<div class="card">
+<h2>Registrar embarcación</h2>
+
+<input placeholder="Nombre de la embarcación">
+<input placeholder="Marca">
+<input placeholder="Modelo">
+<input placeholder="Año">
+<input placeholder="Eslora">
+<input placeholder="HIN / VIN">
+<input placeholder="Matrícula">
+<input placeholder="Bandera">
+<input placeholder="Marina">
+<input placeholder="Propietario">
+<input placeholder="Capitán">
+
+<select>
+<option>Disponible</option>
+<option>Charter</option>
+<option>Mantenimiento</option>
+<option>En venta</option>
+</select>
+
+<button onclick="alert('Embarcación registrada en demo')">Guardar embarcación</button>
+</div>
+
+<h2>Lista de embarcaciones</h2>
+
+<div class="grid">
+<div class="card">
+<h3>Yacht Demo 1</h3>
+<p>Azimut 55 · 2022</p>
+<p>Estado: Disponible</p>
+</div>
+
+<div class="card">
+<h3>Yacht Demo 2</h3>
+<p>Sea Ray 48 · 2020</p>
+<p>Estado: Charter</p>
+</div>
+</div>
+
+</main>
+</body>
+</html>
